@@ -151,7 +151,7 @@
             <h2 class="section-title">Mes Projets</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="project-card card">
+                    <div class="project-card card" data-bs-toggle="modal" data-bs-target="#projectModal1">
                         <img src="https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Projet+E-commerce" class="project-img" alt="Projet 1">
                         <div class="project-overlay">
                             <div class="project-info">
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="project-card card">
+                    <div class="project-card card" data-bs-toggle="modal" data-bs-target="#projectModal2">
                         <img src="https://via.placeholder.com/400x250/3b82f6/ffffff?text=Application+Mobile" class="project-img" alt="Projet 2">
                         <div class="project-overlay">
                             <div class="project-info">
@@ -173,8 +173,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="project-card card">
-                        <img src="https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Portfolio" class="project-img" alt="Projet 3">
+                    <div class="project-card card" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                        <img src="img/code.jpg" class="project-img" alt="Projet 3">
                         <div class="project-overlay">
                             <div class="project-info">
                                 <h4>Portfolio Personnel</h4>
@@ -227,6 +227,85 @@
 
     <!-- Scroll to top button -->
     <button id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Modals for Projects -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal1Label">Site E-commerce</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Projet+E-commerce" class="img-fluid mb-3" alt="Projet 1">
+                    <p>Plateforme de vente en ligne complète développée avec les technologies modernes. Fonctionnalités incluant :</p>
+                    <ul>
+                        <li>Panier d'achat dynamique</li>
+                        <li>Système de paiement sécurisé</li>
+                        <li>Gestion des stocks en temps réel</li>
+                        <li>Interface administrateur</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="#" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal2Label">Application Mobile</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400/3b82f6/ffffff?text=Application+Mobile" class="img-fluid mb-3" alt="Projet 2">
+                    <p>Application mobile de gestion de tâches avec synchronisation cloud. Fonctionnalités principales :</p>
+                    <ul>
+                        <li>Création et organisation de tâches</li>
+                        <li>Synchronisation multi-appareils</li>
+                        <li>Notifications push</li>
+                        <li>Interface intuitive</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> React Native, Firebase, Node.js</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="#" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal3Label">Portfolio Personnel</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Portfolio" class="img-fluid mb-3" alt="Projet 3">
+                    <p>Site vitrine personnel moderne avec animations fluides et design responsive. Caractéristiques :</p>
+                    <ul>
+                        <li>Design responsive pour tous les appareils</li>
+                        <li>Animations CSS et JavaScript</li>
+                        <li>Optimisation des performances</li>
+                        <li>SEO friendly</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> HTML5, CSS3, JavaScript, Bootstrap</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="#" class="btn btn-primary">Voir le projet</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS & jQuery -->
     <script src="js/jquery.min.js"></script>
