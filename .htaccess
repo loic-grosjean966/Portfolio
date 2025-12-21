@@ -1,0 +1,25 @@
+# Sécurité pour Apache
+<IfModule mod_headers.c>
+    # Content Security Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self' data:;"
+
+    # HSTS (uniquement si HTTPS)
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Empêcher le clickjacking
+    Header always set X-Frame-Options DENY
+
+    # Empêcher le sniffing de MIME
+    Header always set X-Content-Type-Options nosniff
+
+    # Référer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Désactiver l'indexation des répertoires
+Options -Indexes
+
+# Redirection HTTPS (si nécessaire)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

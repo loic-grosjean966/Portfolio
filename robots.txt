@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquer l'accès aux dossiers sensibles (si existants)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap (optionnel, à ajouter si vous en créez un)
+# Sitemap: https://votre-domaine.com/sitemap.xml

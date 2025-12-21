@@ -73,4 +73,26 @@
             setTimeout(function() {
                 $('.fade-in-up').css('animation-play-state', 'running');
             }, 100);
+
+            // Validation du formulaire de contact
+            $('.contact-form').on('submit', function(e) {
+                e.preventDefault(); // Empêche la soumission par défaut
+                const name = $(this).find('input[type="text"]').val().trim();
+                const email = $(this).find('input[type="email"]').val().trim();
+                const message = $(this).find('textarea').val().trim();
+
+                // Validation simple
+                if (!name || !email || !message) {
+                    alert('Veuillez remplir tous les champs.');
+                    return;
+                }
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Veuillez entrer un email valide.');
+                    return;
+                }
+
+                // Puisque pas de backend, afficher un message
+                alert('Merci pour votre message ! (Formulaire non fonctionnel côté serveur)');
+            });
         });
