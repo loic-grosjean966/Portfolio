@@ -62,12 +62,6 @@
                 }
             });
 
-            // Gestion du formulaire de contact
-            $('.contact-form').submit(function(e) {
-                e.preventDefault();
-                alert('Merci pour votre message ! Je vous répondrai bientôt.');
-                this.reset();
-            });
 
             // Animation au chargement de la page
             setTimeout(function() {
