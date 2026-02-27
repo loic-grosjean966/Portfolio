@@ -179,6 +179,21 @@
         }
 
         /* Skills */
+        .skill-category {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #8b5cf6;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #334155;
+        }
+
+        .skill-category i {
+            margin-right: 0.4rem;
+        }
+
         .skill-item {
             margin-bottom: 2rem;
         }
