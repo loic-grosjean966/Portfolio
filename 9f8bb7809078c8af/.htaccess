@@ -1,0 +1,37 @@
+# --- Restriction IP (ajouter tes IPs, une par ligne) ---
+# Récupère ton IP sur https://monip.org avant de déployer
+# Si ton IP est dynamique, commente ce bloc et utilise uniquement la Basic Auth
+<RequireAny>
+    Require ip 127.0.0.1
+    # Require ip TON.IP.PUBLIQUE.ICI
+</RequireAny>
+
+# --- Authentification Basic Auth (2ème couche, après l'IP) ---
+AuthType Basic
+AuthName "Zone Administration - Accès restreint"
+# IMPORTANT : mettre ce chemin ABSOLU sur le serveur (ex: /var/www/.htpasswd)
+AuthUserFile /var/www/portfolio/.htpasswd
+Require valid-user
+
+# --- Désactiver l'indexation ---
+Options -Indexes
+
+# --- Bloquer les fichiers sensibles ---
+<FilesMatch "\.(htaccess|htpasswd|json|log)$">
+    Require all denied
+</FilesMatch>
+
+# --- En-têtes de sécurité spécifiques à l'admin ---
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options DENY
+    Header always set X-Content-Type-Options nosniff
+    Header always set Referrer-Policy "no-referrer"
+    Header always set Cache-Control "no-store, no-cache, must-revalidate"
+    Header always set Pragma "no-cache"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://cdnjs.cloudflare.com data:;"
+</IfModule>
+
+# --- Forcer HTTPS (activer quand le certificat est en place) ---
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

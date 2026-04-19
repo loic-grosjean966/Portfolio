@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Loïc GROSJEAN | Ingénieur Cloud DevOps",
+    "lang": "fr"
+  },
+  "nav": {
+    "brand": "Mon Portfolio"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Loïc GROSJEAN",
+    "role": "Ingénieur Cloud DevOps",
+    "description": "Passionné par l'automatisation, la conteneurisation et la fiabilité des systèmes",
+    "cta": "Me contacter",
+    "photo": "img/P1010394.JPG"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "cards": [
+      {
+        "icon": "fas fa-layer-group",
+        "title": "Infrastructure as Code",
+        "text": "Provisionnement et gestion d'infrastructures cloud reproductibles avec Terraform et Ansible"
+      },
+      {
+        "icon": "fas fa-infinity",
+        "title": "CI/CD & Automatisation",
+        "text": "Mise en place de pipelines d'intégration et de déploiement continus pour livrer plus vite"
+      },
+      {
+        "icon": "fas fa-cloud",
+        "title": "Cloud & Conteneurisation",
+        "text": "Déploiement et orchestration de conteneurs Docker sur des clusters Kubernetes en cloud"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "categories": [
+      {
+        "icon": "fas fa-server",
+        "title": "DevOps & Cloud",
+        "items": [
+          {"icon": "fab fa-docker", "name": "Docker"},
+          {"icon": "fab fa-linux", "name": "Linux"},
+          {"icon": "fas fa-layer-group", "name": "Terraform"},
+          {"icon": "fas fa-dharmachakra", "name": "Kubernetes"},
+          {"icon": "fas fa-infinity", "name": "CI/CD (GitLab CI / Jenkins)"},
+          {"icon": "fab fa-aws", "name": "AWS"}
+        ]
+      },
+      {
+        "icon": "fas fa-globe",
+        "title": "Développement Web",
+        "items": [
+          {"icon": "fab fa-html5", "name": "HTML / CSS"},
+          {"icon": "fab fa-js", "name": "JavaScript"},
+          {"icon": "fab fa-php", "name": "PHP"},
+          {"icon": "fab fa-react", "name": "React"},
+          {"icon": "fab fa-git-alt", "name": "Git"}
+        ]
+      },
+      {
+        "icon": "fas fa-mobile-screen",
+        "title": "Développement Mobile",
+        "items": [
+          {"icon": "fas fa-mobile-screen", "name": "Flutter"},
+          {"icon": "fas fa-code", "name": "Dart"}
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "items": [
+      {
+        "title": "Pipeline CI/CD",
+        "description": "Automatisation complète du build, des tests et du déploiement",
+        "image": "https://via.placeholder.com/400x250/8b5cf6/ffffff?text=Pipeline+CI%2FCD",
+        "modal_image": "https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Pipeline+CI%2FCD",
+        "modal_intro": "Mise en place d'un pipeline CI/CD complet pour automatiser le cycle de vie d'une application. Fonctionnalités incluant :",
+        "modal_features": [
+          "Build automatique à chaque push",
+          "Exécution des tests unitaires et d'intégration",
+          "Analyse de la qualité du code (SonarQube)",
+          "Déploiement automatisé en staging puis en production"
+        ],
+        "tech": "GitLab CI, Docker, Ansible, Nginx",
+        "github": "#",
+        "url": "#"
+      },
+      {
+        "title": "Infrastructure as Code",
+        "description": "Provisionnement d'une infra cloud complète avec Terraform",
+        "image": "https://via.placeholder.com/400x250/3b82f6/ffffff?text=Infrastructure+as+Code",
+        "modal_image": "https://via.placeholder.com/800x400/3b82f6/ffffff?text=Infrastructure+as+Code",
+        "modal_intro": "Provisionnement d'une infrastructure cloud complète et reproductible via du code versionné. Fonctionnalités principales :",
+        "modal_features": [
+          "Création de VPC, sous-réseaux et groupes de sécurité",
+          "Déploiement d'instances EC2 et de bases de données RDS",
+          "Configuration des serveurs avec Ansible",
+          "Gestion des états Terraform en remote backend (S3)"
+        ],
+        "tech": "Terraform, Ansible, AWS, Git",
+        "github": "#",
+        "url": "#"
+      },
+      {
+        "title": "Cluster Kubernetes",
+        "description": "Déploiement et orchestration de microservices conteneurisés",
+        "image": "img/code.jpg",
+        "modal_image": "img/code.jpg",
+        "modal_intro": "Déploiement et orchestration d'une application microservices conteneurisée sur un cluster Kubernetes. Caractéristiques :",
+        "modal_features": [
+          "Conteneurisation des services avec Docker",
+          "Déploiements, Services et Ingress Kubernetes",
+          "Auto-scaling horizontal des pods (HPA)",
+          "Monitoring avec Prometheus et Grafana"
+        ],
+        "tech": "Docker, Kubernetes, Helm, Prometheus, Grafana",
+        "github": "#",
+        "url": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-moi"
+  },
+  "footer": {
+    "linkedin": "#",
+    "github": "#",
+    "twitter": "#",
+    "instagram": "#",
+    "copyright": "2024 Mon Portfolio. Tous droits réservés."
+  }
+}

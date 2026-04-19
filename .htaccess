@@ -1,3 +1,6 @@
+# Servir index.php en priorité sur index.html
+DirectoryIndex index.php index.html
+
 # Sécurité pour Apache
 <IfModule mod_headers.c>
     # Content Security Policy
